@@ -1,7 +1,6 @@
 function calculateTriangleArea() {
   const triangleBaseValue = parseFloat(document.getElementById("triangle-base").value);
   const triangleHeightValue = parseFloat(document.getElementById("triangle-height").value);
-  console.log(triangleBaseValue, triangleHeightValue);
   if (isNaN(triangleBaseValue) === true || isNaN(triangleHeightValue) === true) {
     alert("Enter valid number");
   } else {
