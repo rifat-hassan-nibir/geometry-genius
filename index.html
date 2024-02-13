@@ -20,7 +20,7 @@
       </nav>
     </header>
     <main>
-      <div class="flex flex-col lg:flex-row">
+      <div class="flex flex-col lg:flex-row gap-5">
         <div class="w-full lg:w-3/4">
           <!-- Card Container -->
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -88,6 +88,38 @@
                 </div>
               </div>
             </div>
+            <!-- Pentagon -->
+            <div class="card card-compact w-auto bg-base-100 p-1 border-2 rounded-lg">
+              <figure class="mb-6">
+                <img src="images/pentagon.png" />
+              </figure>
+              <div class="card-body">
+                <h2 class="text-center text-2xl font-bold">Pentagon</h2>
+                <p class="text-center">Area (A) = 0.5 * p * b</p>
+                <div class="text-center space-x-3 my-5">
+                  <input
+                    id="pentagon-paralobium"
+                    class="bg-slate-100 p-2 rounded w-16"
+                    type="text"
+                    placeholder="p"
+                  />
+                  <span>cm</span>
+                  <input
+                    id="pentagon-base"
+                    class="bg-slate-100 p-2 rounded w-16"
+                    type="text"
+                    placeholder="b"
+                  />
+                  <span>cm</span>
+                </div>
+
+                <div class="card-actions justify-end">
+                  <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Area Calculation Container -->
@@ -103,5 +135,6 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/rectangle-calculate.js"></script>
+    <script src="scripts/pentagon-calculate.js"></script>
   </body>
 </html>
